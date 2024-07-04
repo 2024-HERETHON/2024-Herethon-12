@@ -1,0 +1,32 @@
+/* aside.html */
+aside {
+  width: 150px;
+  background-color: #fff;
+  padding: 60px;
+  background-color: #fffaec;
+  margin-right: 30px;
+}
+
+.community {
+  font-size: 25px;
+}
+
+hr {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comu_list {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
