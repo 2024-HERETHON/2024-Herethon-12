@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소식</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__menu">
+                <a class="header__menu__item homeText" href="index.html">MUSE</a>
+                <a class="header__menu__item" href="news.html">소식</a>
+                <a class="header__menu__item" href="#mypage">마이페이지</a>
+                <a class="header__menu__item" href="#community">커뮤니티</a>
+            </div>
+            <div class="header__menu">
+                <a class="header__menu__item" href="#login">로그인</a>
+                <a class="header__menu__item" href="#join">회원가입</a>
+            </div>
+        </header>
+        <!-- Main -->
+        <main id="main">
+            <!-- News (소식) -->
+            <section id="news" class="content">
+                <div class="news-search">
+                    <div class="news-search-container">
+                        <img src="../images/search.svg" alt="">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                    </div>
+                    <div class="job-select-container">
+                        <button class="job-select">직무 선택</button>
+                    </div>
+                </div>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <a href="#" class="post-link" data-id="1">
+                            <div class="news-content">
+                                <p class="quote">“나는 도전을 두려워 하지 않는다”</p>
+                                <div class="divider"></div>
+
+                            </div>
+                            <div class="news-stats">
+                                <p class="author">SKT 데이터 서비스 개발자
+                                    <span>정다예</span>
+                                </p>
+                                <span class="likes">36</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#" class="post-link" data-id="2">
+                            <div class="news-content">
+                                <p class="quote">“개발자는 젠더와 세대의 갈등 없이 평등하게 일할 수 있는 직군”</p>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="news-stats">
+                                <p class="author">SKT 엔지니어 출신 개발자
+                                    <span>송민경</span>
+                                </p>
+                                <span class="likes">27</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#" class="post-link" data-id="3">
+                            <div class="news-content">
+                                <p class="quote">“SKT에는 개발 역량 넓힐 기회와 환경이 열려 있어”</p>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="news-stats">
+                                <p class="author">SKT 15년차 베테랑 개발자
+                                    <span>정다예</span>
+                                </p>
+                                <span class="likes">18</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#" class="post-link" data-id="4">
+                            <div class="news-content">
+                                <p class="quote">“통신사 특화 텔코 LLM 모델을 개발하는 언어학자”</p>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="news-stats">
+                                <p class="author">DATA 구축 및 평가 팀
+                                    <span>이서진</span>
+                                </p>
+                                <span class="likes">6</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Post Detail -->
+            <section id="post-detail" class="post-detail" style="display:none;">
+                <h1>“나는 도전을 두려워 하지 않는다”</h1>
+                <div id="post-content"></div>
+                <button id="back-to-news">뒤로가기</button>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer id="footer"></footer>
+        <!-- </div>
+    <script>
+        document.querySelectorAll('.post-link').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                showPostDetail(link.dataset.id);
+            });
+        });
+
+        document.getElementById('back-to-news').addEventListener('click', function() {
+            showNewsList();
+        });
+
+        function showNewsList() {
+            document.getElementById('news').style.display = 'block';
+            document.getElementById('post-detail').style.display = 'none';
+        }
+
+        function showPostDetail(id) {
+            document.getElementById('news').style.display = 'none';
+            document.getElementById('post-detail').style.display = 'block';
+            document.getElementById('post-content').innerText = '게시물 ' + id + '의 전체 내용입니다.';
+        }
+    </script> -->
+</body>
+
+</html>
